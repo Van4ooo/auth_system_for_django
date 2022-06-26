@@ -69,3 +69,14 @@ class LoginPageTests(TestCase):
 
         self.assertEqual(resp.status_code, 302)
 
+
+class LogOutTests(TestCase):
+    def test_log_out_system_by_url(self):
+        resp = self.client.post("/users/logout/")
+
+        self.assertEqual(resp.status_code, 302)
+
+    def test_log_out_system_by_name(self):
+        resp = self.client.post(reverse("logout"))
+
+        self.assertEqual(resp.status_code, 302)
