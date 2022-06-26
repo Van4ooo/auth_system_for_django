@@ -1,0 +1,19 @@
+{% extends 'base.html'%}
+
+{% block title %} Log in {% endblock title%}
+
+{% if form.error %}
+    <p>Your password or login, uncorrected!!!</p>
+{% endif%}
+
+{% block content %}
+    {% if user.is_authenticated %}
+        <p> What are you doing, here? Hi <b>{{ user.username }}</b></p>
+        <a href="{ url 'home'}">Home</a>
+    {% else %}
+        <form method="post" action="">{% csrf_token %}
+            {{ form.as_p }}
+            <input value="Log in" type="submit">
+        </form>
+    {% endif %}
+{% endblock content%}

@@ -1,0 +1,15 @@
+{% extends 'base.html'%}
+
+{% block title %} Sing up {% endblock title%}
+
+{% block content %}
+    {% if user.is_authenticated %}
+        <p> What are you doing, here? Hi <b>{{ user.username }}</b></p>
+        <a href="{ url 'home'}">Home</a>
+    {% else %}
+        <form method="post" action="">{% csrf_token %}
+            {{ form.as_p }}
+            <input value="Sigh up" type="submit">
+        </form>
+    {% endif %}
+{% endblock content%}
