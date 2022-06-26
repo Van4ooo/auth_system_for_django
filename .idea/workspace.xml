@@ -1,23 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d6b43856-eb8f-4fe5-ad69-a1c256f763cd" name="Changes" comment="" />
+    <list default="true" id="d6b43856-eb8f-4fe5-ad69-a1c256f763cd" name="Changes" comment="add to admin panel, custom user forms&#10;add to admin panel, user model">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/forms.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2B6XXIytwUFu6d3AgbJ9ZunD9ZV" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -29,6 +58,146 @@
       <option name="presentableId" value="Default" />
       <updated>1656227546394</updated>
     </task>
+    <task id="LOCAL-00001" summary="custom user forms(creation, change)">
+      <created>1656229925217</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1656229925217</updated>
+    </task>
+    <task id="LOCAL-00002" summary="add to admin panel, custom user forms">
+      <created>1656230407809</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1656230407809</updated>
+    </task>
+    <task id="LOCAL-00003" summary="add to admin panel, custom user forms&#10;add to admin panel, user model">
+      <created>1656230439826</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1656230439826</updated>
+    </task>
+    <task id="LOCAL-00004" summary="refactor">
+      <created>1656230496187</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1656230496187</updated>
+    </task>
+    <task id="LOCAL-00005" summary="migration">
+      <created>1656230595607</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1656230595607</updated>
+    </task>
+    <task id="LOCAL-00006" summary="set up list_display for admin panel">
+      <created>1656231097344</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1656231097344</updated>
+    </task>
+    <task id="LOCAL-00007" summary="join templates directories at project">
+      <created>1656231417137</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1656231417137</updated>
+    </task>
+    <task id="LOCAL-00008" summary="add redirect on home page, from login/logout pages">
+      <created>1656238444643</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1656238444643</updated>
+    </task>
+    <task id="LOCAL-00009" summary="created base html file">
+      <created>1656238527604</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1656238527604</updated>
+    </task>
+    <task id="LOCAL-00010" summary="add login and sign up pages">
+      <created>1656238554080</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1656238554080</updated>
+    </task>
+    <task id="LOCAL-00011" summary="created home page">
+      <created>1656238580314</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1656238580314</updated>
+    </task>
+    <task id="LOCAL-00012" summary="set up of main urls file">
+      <created>1656238891664</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1656238891664</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Create view for sign up page">
+      <created>1656239403082</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1656239403082</updated>
+    </task>
+    <task id="LOCAL-00014" summary="create url route for sign up page">
+      <created>1656239575032</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1656239575032</updated>
+    </task>
+    <task id="LOCAL-00015" summary="correct url redirect">
+      <created>1656240364865</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1656240364865</updated>
+    </task>
+    <task id="LOCAL-00016" summary="success url begin a login">
+      <created>1656240415018</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1656240415018</updated>
+    </task>
+    <task id="LOCAL-00017" summary="add email field">
+      <created>1656240571921</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1656240571921</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="custom user forms(creation, change)" />
+    <MESSAGE value="add to admin panel, custom user forms" />
+    <MESSAGE value="add to admin panel, custom user forms&#10;add to admin panel, user model" />
+    <MESSAGE value="refactor" />
+    <MESSAGE value="migration" />
+    <MESSAGE value="set up list_display for admin panel" />
+    <MESSAGE value="join templates directories at project" />
+    <MESSAGE value="add redirect on home page, from login/logout pages" />
+    <MESSAGE value="created base html file" />
+    <MESSAGE value="add login and sign up pages" />
+    <MESSAGE value="created home page" />
+    <MESSAGE value="set up of main urls file" />
+    <MESSAGE value="Create view for sign up page" />
+    <MESSAGE value="create url route for sign up page" />
+    <MESSAGE value="correct url redirect" />
+    <MESSAGE value="success url begin a login" />
+    <MESSAGE value="add email field" />
+    <option name="LAST_COMMIT_MESSAGE" value="add email field" />
   </component>
 </project>
