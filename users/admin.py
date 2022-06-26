@@ -12,3 +12,4 @@ class CustomUserAdmin(UserAdmin):
 
 
 admin.register(CustomUser, CustomUserAdmin)
+
