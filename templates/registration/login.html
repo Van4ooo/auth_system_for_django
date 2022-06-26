@@ -9,7 +9,7 @@
 {% block content %}
     {% if user.is_authenticated %}
         <p> What are you doing, here? Hi <b>{{ user.username }}</b></p>
-        <a href="{ url 'home'}">Home</a>
+        <a href="{% url 'home' %}">Home</a>
     {% else %}
         <form method="post" action="">{% csrf_token %}
             {{ form.as_p }}
