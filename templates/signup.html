@@ -9,7 +9,7 @@
     {% else %}
         <form method="post" action="">{% csrf_token %}
             {{ form.as_p }}
-            <input value="Sigh up" type="submit">
+            <input class="btn btn-primary" type="submit" value="Sign Up">
         </form>
     {% endif %}
 {% endblock content%}
