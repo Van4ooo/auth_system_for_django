@@ -1,4 +1,4 @@
-from django.views.generic import ListView, DetailView, DeleteView, UpdateView
+from django.views.generic import ListView, DetailView, DeleteView, UpdateView, CreateView
 from django.urls import reverse_lazy
 
 from .models import Article
@@ -32,9 +32,16 @@ class ArticleEditPageView(UpdateView):
     fields = ('title', 'body')
 
 
+class ArticleCreatePageView(CreateView):
+    model = Article
+    template_name = "article_create.html"
+    fields = ('title', 'body')
+
+
 __all__ = [
     'ArticlePageView',
     'ArticleDetailPageView',
     'ArticleDeletePageView',
-    'ArticleEditPageView'
+    'ArticleEditPageView',
+    'ArticleCreatePageView'
 ]
