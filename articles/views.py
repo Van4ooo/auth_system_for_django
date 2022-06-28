@@ -1,4 +1,5 @@
 from django.views.generic import ListView, DetailView, DeleteView, UpdateView
+from django.urls import reverse_lazy
 
 from .models import Article
 
@@ -20,11 +21,15 @@ class ArticleDeletePageView(DeleteView):
     template_name = "article_delete.html"
     context_object_name = "article"
 
+    success_url = reverse_lazy('articles')
+
 
 class ArticleEditPageView(UpdateView):
     model = Article
     template_name = "article_edit.html"
     context_object_name = "article"
+
+    fields = ('title', 'body')
 
 
 __all__ = [
