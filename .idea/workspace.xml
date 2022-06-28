@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d6b43856-eb8f-4fe5-ad69-a1c256f763cd" name="Changes" comment="add to admin panel, custom user forms&#10;add to admin panel, user model">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="d6b43856-eb8f-4fe5-ad69-a1c256f763cd" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/article_delete.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/article_delete.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/article_edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/article_edit.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/article_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/article_list.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,34 +58,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1656227546394</updated>
-    </task>
-    <task id="LOCAL-00001" summary="custom user forms(creation, change)">
-      <created>1656229925217</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1656229925217</updated>
-    </task>
-    <task id="LOCAL-00002" summary="add to admin panel, custom user forms">
-      <created>1656230407809</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1656230407809</updated>
-    </task>
-    <task id="LOCAL-00003" summary="add to admin panel, custom user forms&#10;add to admin panel, user model">
-      <created>1656230439826</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1656230439826</updated>
-    </task>
-    <task id="LOCAL-00004" summary="refactor">
-      <created>1656230496187</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1656230496187</updated>
     </task>
     <task id="LOCAL-00005" summary="migration">
       <created>1656230595607</created>
@@ -177,27 +150,287 @@
       <option name="project" value="LOCAL" />
       <updated>1656240571921</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="customizing fields of form">
+      <created>1656240789509</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1656240789509</updated>
+    </task>
+    <task id="LOCAL-00019" summary="added to INSTALLED_APPS pages app">
+      <created>1656241341829</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1656241341829</updated>
+    </task>
+    <task id="LOCAL-00020" summary="create new app(pages)">
+      <created>1656241384641</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1656241384641</updated>
+    </task>
+    <task id="LOCAL-00021" summary="home page route traveled to (pages.urls)&#10;something set up of home page, create views class and add to urlConf">
+      <created>1656242069973</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1656242069973</updated>
+    </task>
+    <task id="LOCAL-00022" summary="add 4 tests for home page">
+      <created>1656242634406</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1656242634407</updated>
+    </task>
+    <task id="LOCAL-00023" summary="added tests for sign up/ log in page">
+      <created>1656244419624</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1656244419624</updated>
+    </task>
+    <task id="LOCAL-00024" summary="added tests for log out page">
+      <created>1656244638689</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1656244638689</updated>
+    </task>
+    <task id="LOCAL-00025" summary="connect bootstrap">
+      <created>1656313655183</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1656313655183</updated>
+    </task>
+    <task id="LOCAL-00026" summary="add something css styles on website">
+      <created>1656315140403</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1656315140403</updated>
+    </task>
+    <task id="LOCAL-00027" summary="add crispy_forms to installed app list">
+      <created>1656315361425</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1656315361425</updated>
+    </task>
+    <task id="LOCAL-00028" summary="connect bootstrap template to crispy_forms">
+      <created>1656315452569</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1656315452569</updated>
+    </task>
+    <task id="LOCAL-00029" summary="add custom forms on sing up page(crispy)">
+      <created>1656352871799</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1656352871799</updated>
+    </task>
+    <task id="LOCAL-00030" summary="create custom page for change_password and her redirect page.">
+      <created>1656353639917</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1656353639917</updated>
+    </task>
+    <task id="LOCAL-00031" summary="add custom form for login page with crispy">
+      <created>1656354329767</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1656354329767</updated>
+    </task>
+    <task id="LOCAL-00032" summary="add Email Backend settings">
+      <created>1656354355815</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1656354355815</updated>
+    </task>
+    <task id="LOCAL-00033" summary="create password reset templates">
+      <created>1656355933738</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1656355933738</updated>
+    </task>
+    <task id="LOCAL-00034" summary="add reset link">
+      <created>1656356232041</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1656356232041</updated>
+    </task>
+    <task id="LOCAL-00035" summary="add something styling :)">
+      <created>1656356612778</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1656356612778</updated>
+    </task>
+    <task id="LOCAL-00036" summary="connect articles app to main project">
+      <created>1656356842209</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1656356842209</updated>
+    </task>
+    <task id="LOCAL-00037" summary="create new app(articles)">
+      <created>1656356899122</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1656356899122</updated>
+    </task>
+    <task id="LOCAL-00038" summary="create model Article">
+      <created>1656401444231</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1656401444231</updated>
+    </task>
+    <task id="LOCAL-00039" summary="migration file for model Article">
+      <created>1656401596780</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1656401596780</updated>
+    </task>
+    <task id="LOCAL-00040" summary="add Article model to admin panel">
+      <created>1656401705233</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1656401705233</updated>
+    </task>
+    <task id="LOCAL-00041" summary="add Article page">
+      <created>1656421180554</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1656421180555</updated>
+    </task>
+    <task id="LOCAL-00042" summary="add Article detail page">
+      <created>1656423337621</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1656423337621</updated>
+    </task>
+    <task id="LOCAL-00043" summary="create template of Article detail page">
+      <created>1656423389485</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1656423389485</updated>
+    </task>
+    <task id="LOCAL-00044" summary="create Article delete page">
+      <created>1656423711132</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1656423711132</updated>
+    </task>
+    <task id="LOCAL-00045" summary="set up Article delete page">
+      <created>1656423847216</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1656423847216</updated>
+    </task>
+    <task id="LOCAL-00046" summary="add ArticleEditPageView">
+      <created>1656424091704</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1656424091704</updated>
+    </task>
+    <task id="LOCAL-00047" summary="add roure url for edit Article">
+      <created>1656424164027</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1656424164027</updated>
+    </task>
+    <task id="LOCAL-00048" summary="create article_edit template">
+      <created>1656424318799</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1656424318799</updated>
+    </task>
+    <task id="LOCAL-00049" summary="refactor a get_absolute_url func">
+      <created>1656424664925</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1656424664925</updated>
+    </task>
+    <task id="LOCAL-00050" summary="add redirect after delete pages&#10;add fields to edited">
+      <created>1656424744887</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1656424744888</updated>
+    </task>
+    <task id="LOCAL-00051" summary="closed  access to edit/delete article of other user">
+      <created>1656434071374</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1656434071374</updated>
+    </task>
+    <task id="LOCAL-00052" summary="closed  access to visit url edit/delete article of other user">
+      <created>1656434423753</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1656434423753</updated>
+    </task>
+    <task id="LOCAL-00053" summary="closed access to visit url delete_article page of other user">
+      <created>1656435667357</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1656435667357</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="custom user forms(creation, change)" />
-    <MESSAGE value="add to admin panel, custom user forms" />
-    <MESSAGE value="add to admin panel, custom user forms&#10;add to admin panel, user model" />
-    <MESSAGE value="refactor" />
-    <MESSAGE value="migration" />
-    <MESSAGE value="set up list_display for admin panel" />
-    <MESSAGE value="join templates directories at project" />
-    <MESSAGE value="add redirect on home page, from login/logout pages" />
-    <MESSAGE value="created base html file" />
-    <MESSAGE value="add login and sign up pages" />
-    <MESSAGE value="created home page" />
-    <MESSAGE value="set up of main urls file" />
-    <MESSAGE value="Create view for sign up page" />
-    <MESSAGE value="create url route for sign up page" />
-    <MESSAGE value="correct url redirect" />
-    <MESSAGE value="success url begin a login" />
-    <MESSAGE value="add email field" />
-    <option name="LAST_COMMIT_MESSAGE" value="add email field" />
+    <MESSAGE value="add custom forms on sing up page(crispy)" />
+    <MESSAGE value="create custom page for change_password and her redirect page." />
+    <MESSAGE value="add custom form for login page with crispy" />
+    <MESSAGE value="add Email Backend settings" />
+    <MESSAGE value="create password reset templates" />
+    <MESSAGE value="add reset link" />
+    <MESSAGE value="add something styling :)" />
+    <MESSAGE value="connect articles app to main project" />
+    <MESSAGE value="create new app(articles)" />
+    <MESSAGE value="create model Article" />
+    <MESSAGE value="migration file for model Article" />
+    <MESSAGE value="add Article model to admin panel" />
+    <MESSAGE value="add Article page" />
+    <MESSAGE value="add Article detail page" />
+    <MESSAGE value="create template of Article detail page" />
+    <MESSAGE value="create Article delete page" />
+    <MESSAGE value="set up Article delete page" />
+    <MESSAGE value="add ArticleEditPageView" />
+    <MESSAGE value="add roure url for edit Article" />
+    <MESSAGE value="create article_edit template" />
+    <MESSAGE value="refactor a get_absolute_url func" />
+    <MESSAGE value="add redirect after delete pages&#10;add fields to edited" />
+    <MESSAGE value="closed  access to edit/delete article of other user" />
+    <MESSAGE value="closed  access to visit url edit/delete article of other user" />
+    <MESSAGE value="closed access to visit url delete_article page of other user" />
+    <option name="LAST_COMMIT_MESSAGE" value="closed access to visit url delete_article page of other user" />
   </component>
 </project>
