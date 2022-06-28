@@ -22,7 +22,7 @@ class ArticleDeletePageView(DeleteView):
 
 
 __all__ = [
-    ArticlePageView,
-    ArticleDetailPageView,
-    ArticleDeletePageView
+    'ArticlePageView',
+    'ArticleDetailPageView',
+    'ArticleDeletePageView'
 ]
