@@ -1,4 +1,4 @@
-from django.views.generic import ListView, DetailView
+from django.views.generic import ListView, DetailView, DeleteView
 
 from .models import Article
 
@@ -13,3 +13,16 @@ class ArticleDetailPageView(DetailView):
     model = Article
     template_name = "article_detail.html"
     context_object_name = "article"
+
+
+class ArticleDeletePageView(DeleteView):
+    model = Article
+    template_name = "article_delete.html"
+    context_object_name = "article"
+
+
+__all__ = [
+    ArticlePageView,
+    ArticleDetailPageView,
+    ArticleDeletePageView
+]
