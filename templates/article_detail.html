@@ -6,9 +6,11 @@
         <p>by {{ article.author }} | {{ article.date }}</p>
         <p>{{ article.body }}</p>
     </div>
-    <p>
-        <a href="{% url 'article_edit' article.pk %}">Edit</a> |
-        <a href="{% url 'article_delete' article.pk %}">Delete</a>
-    </p>
+    {% if user.is_authenticated and article.author.username == user.username %}
+        <p>
+            <a href="{% url 'article_edit' article.pk %}">Edit</a> |
+            <a href="{% url 'article_delete' article.pk %}">Delete</a>
+        </p>
+    {% endif %}
     <p>Back to <a href="{% url 'articles' %}">All Articles</a>.</p>
 {% endblock content %}
