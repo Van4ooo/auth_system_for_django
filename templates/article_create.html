@@ -3,19 +3,11 @@
 
 {% block title %} Create new article{% endblock title%}
 {% block content %}
-    {% if user.is_authenticated %}
-        <h1>Create new article</h1>
-        <form method="post">
-            {% csrf_token %}
-            {{ form|crispy }}
+    <h1>Create new article</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form|crispy }}
 
-            <input class="btn btn-primary" type="submit" value="Create">
-        </form>
-    {% else %}
-        <h1 class="text-danger">You dont logged it </h1>
-        <h3>
-            <a href="{% url 'login' %}" class="badge badge-light">Log in</a> |
-            <a href="{% url 'signup' %}" class="badge badge-dark">Sign Up</a>
-        </h3>
-    {% endif %}
+        <input class="btn btn-primary" type="submit" value="Create">
+    </form>
 {% endblock content %}
