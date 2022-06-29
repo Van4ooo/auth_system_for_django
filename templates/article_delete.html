@@ -1,19 +1,11 @@
 {% extends 'base.html' %}
 
-{% block title %}
-    {% if user.is_authenticated and article.author.username == user.username %} Delete article {{ article.pk }}
-    {% else %} No permission.
-    {% endif %}
-{% endblock title%}
+{% block title %}Delete article{% endblock title%}
 
 {% block content %}
-    {% if user.is_authenticated and article.author.username == user.username %}
-        <h1>Delete</h1>
-        <form action="" method="post">{% csrf_token %}
-            <p>Are you sure you want to delete <b>"{{ article.title }}"?</b></p>
-            <button class="btn btn-danger ml-2" type="submit">Confirm</button>
-        </form>
-    {% else %}
-        <p class="text-danger" style="font-size:24px">No permission. Author of this article <b>{{ article.author }}</b></p>
-    {% endif %}
+    <h1>Delete</h1>
+    <form action="" method="post">{% csrf_token %}
+        <p>Are you sure you want to delete <b>"{{ article.title }}"?</b></p>
+        <button class="btn btn-danger ml-2" type="submit">Confirm</button>
+    </form>
 {% endblock content %}
