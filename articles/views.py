@@ -37,6 +37,11 @@ class ArticleCreatePageView(CreateView):
     template_name = "article_create.html"
     fields = ('title', 'body')
 
+    def form_valid(self, form):
+        form.instance.author = self.request.user
+
+        return super().form_valid(form)
+
 
 __all__ = [
     'ArticlePageView',
