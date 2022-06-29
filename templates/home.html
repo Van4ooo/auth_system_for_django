@@ -3,9 +3,12 @@
 {% block title%} Home page {% endblock title%}
 
 {% block content%}
-    {% if user.is_authenticated %}
-        <p>Hi <b>{{ user.username }}</b></p>
-    {% else %}
-        <p> You are not logged in</p>
-    {% endif %}
+    <div class="jumbotron">
+        <h1 class="display-4">Newspaper app</h1>
+        <p class="lead">A Newspaper website built with Django.</p>
+        <p class="lead">
+            <a class="btn btn-primary btn-lg" href="{% url 'articles' %}"
+            role="button">View All Articles</a>
+        </p>
+    </div>
 {% endblock content%}
