@@ -17,18 +17,22 @@ class ArticleDetailPageView(DetailView):
     context_object_name = "article"
 
 
-class ArticleDeletePageView(DeleteView):
+class ArticleDeletePageView(LoginRequiredMixin, DeleteView):
     model = Article
     template_name = "article_delete.html"
     context_object_name = "article"
 
+    login_url = 'login'
+
     success_url = reverse_lazy('articles')
 
 
-class ArticleEditPageView(UpdateView):
+class ArticleEditPageView(LoginRequiredMixin, UpdateView):
     model = Article
     template_name = "article_edit.html"
     context_object_name = "article"
+
+    login_url = 'login'
 
     fields = ('title', 'body')
 
