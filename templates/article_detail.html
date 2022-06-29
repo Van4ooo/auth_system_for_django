@@ -16,11 +16,11 @@
     {% for comment in article.comments.all %}
         <div class="card">
             <div class="card-header">
-                <span class="font-weight-bold">
-                    <a href = "{% url 'comment_detail' article.pk comment.pk%}">{{ comment.author }}</a>
-                </span> &middot;
+                writer by
+                {{ comment.author }}
                 <span class="text-muted"> on
                 {{ comment.data }}</span>
+                <a href = "{% url 'comment_detail' article.pk comment.pk%}">detail of comments</a>
             </div>
             <div class="card-body">
                 {{ comment.body }}

@@ -1,1 +1,21 @@
-<h1>Hello</h1>
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="article-entry">
+        <h2> Comment </h2>
+        <p>by {{ comment.article.author }} | {{ comment.data }}</p>
+        <p>{{ comment.body }}</p>
+    </div>
+    {% if user.is_authenticated and comment.article.author.username == user.username %}
+        <p>
+            <a href="{% url 'home' %}" class="badge badge-primary">Edit</a> |
+            <a href="{% url 'home' %}" class="badge badge-warning">Delete</a>
+        </p>
+    {% endif %}
+
+    <p>Back to <a href="{% url 'articles' %}" class="badge badge-secondary">All Articles</a>.</p>
+    <p>Back to <a href="{% url 'article_detail' comment.article.pk %}"
+                  class="badge badge-secondary">Article <b
+            class="text-info">{{comment.article.title}}</b></a>.
+    </p>
+{% endblock content %}
