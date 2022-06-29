@@ -12,5 +12,22 @@
             <a href="{% url 'article_delete' article.pk %}" class="badge badge-warning">Delete</a>
         </p>
     {% endif %}
+    <h3 class="text-info">Comments</h3>
+    {% for comment in article.comments.all %}
+        <div class="card">
+            <div class="card-header">
+                <span class="font-weight-bold">
+                    <a href = "#">{{ comment.author }}</a>
+                </span> &middot;
+                <span class="text-muted"> on
+                {{ comment.data }}</span>
+            </div>
+            <div class="card-body">
+                {{ comment.body }}
+            </div>
+        </div>
+        <br>
+    {% endfor %}
+
     <p>Back to <a href="{% url 'articles' %}" class="badge badge-secondary">All Articles</a>.</p>
 {% endblock content %}
