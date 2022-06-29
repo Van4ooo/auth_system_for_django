@@ -23,6 +23,7 @@ class Article(models.Model):
 class Comment(models.Model):
     article = models.ForeignKey(
         Article,
+        related_name="comments",
         on_delete=models.CASCADE
     )
     body = models.CharField(max_length=300)
