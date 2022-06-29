@@ -5,6 +5,7 @@ from .models import Article, Comment
 
 class CommentAdmin(admin.StackedInline):
     model = Comment
+    extra = 0
 
 
 class ArticleAdmin(admin.ModelAdmin):
