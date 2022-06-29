@@ -1,3 +1,4 @@
+from django.contrib.auth.mixins import LoginRequiredMixin
 from django.views.generic import ListView, DetailView, DeleteView, UpdateView, CreateView
 from django.urls import reverse_lazy
 
@@ -32,10 +33,12 @@ class ArticleEditPageView(UpdateView):
     fields = ('title', 'body')
 
 
-class ArticleCreatePageView(CreateView):
+class ArticleCreatePageView(LoginRequiredMixin, CreateView):
     model = Article
     template_name = "article_create.html"
     fields = ('title', 'body')
+
+    login_url = 'login'
 
     def form_valid(self, form):
         form.instance.author = self.request.user
