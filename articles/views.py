@@ -2,7 +2,7 @@ from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
 from django.views.generic import ListView, DetailView, DeleteView, UpdateView, CreateView
 from django.urls import reverse_lazy
 
-from .models import Article
+from .models import Article, Comment
 
 
 class ArticlePageView(ListView):
@@ -57,10 +57,17 @@ class ArticleCreatePageView(LoginRequiredMixin, CreateView):
         return super().form_valid(form)
 
 
+class CommentDetailPageView(DetailView):
+    model = Comment
+    template_name = "comment_detail.html"
+    context_object_name = "comment"
+
+
 __all__ = [
     'ArticlePageView',
     'ArticleDetailPageView',
     'ArticleDeletePageView',
     'ArticleEditPageView',
-    'ArticleCreatePageView'
+    'ArticleCreatePageView',
+    'CommentDetailPageView'
 ]
